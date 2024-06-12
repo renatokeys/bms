@@ -67,7 +67,8 @@ export type AuthenticationCreds = SignalCreds & {
 	registered: boolean
 	backupToken: Buffer
 	registration: RegistrationOptions
-    pairingCode: string | undefined
+    pairingCode: string | undefined,
+    routingInfo: Buffer | undefined
 }
 
 export type SignalDataTypeMap = {
